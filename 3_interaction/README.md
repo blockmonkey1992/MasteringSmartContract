@@ -8,7 +8,7 @@
 ### Byte
 - EIP-1884에 따르면 가스 비용이 변경되었다.
 
-#### OPCODE OF ETHEREUM
+### OPCODE OF ETHEREUM
 
 - MLOAD(p): 메모리의 특정 위치(p)에 있는 32바이트(1 워드)를 읽습니다. OPCODE는 이를 스택의 top에 저장, Assembly에서는 변수에 저장되거나 다른 연산의 피연산자로 사용될 수 있다. (expression)
 
@@ -16,6 +16,7 @@
 
 - EXTCODESIZE(a): 어카운트 a 의 코드 사이즈를 반환. 
 
+<img width="1228" alt="무제" src="https://user-images.githubusercontent.com/66409384/175953849-96198e49-3ec6-4ea0-8661-78179d40484e.png">
 
 
 ### HOW TO SOLVE ?
