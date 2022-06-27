@@ -17,5 +17,3 @@
 - 이를 테스트하기 위해서는 ethers.constant.MaxUint256을 이용해 테스트를 진행하자.
 
 <img width="735" alt="Uint256" src="https://user-images.githubusercontent.com/66409384/175329793-a635a17a-ef06-4a1f-8f48-fe695a79ebb9.png">
-
-
