@@ -1,15 +1,14 @@
-# Basic Sample Hardhat Project
+# Smart Contract Decimals
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
 
-Try running some of the following tasks:
+## Conclusion
+- 기본적으로 솔리디티에서는 소수 처리가 불가함.
+- 따라서 Tric으로 정수 값으로 곱셈한 뒤, 나누어 근접한 결과를 도출해 낼 수 있음.
+- 계산 식이 복잡해지면 정확한 수치를 얻어내는데 어려움이 있음.
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+
+## Other Case
+- Uniswap 사례 (112 bit 정수저장 , 112 bit 소수저장, 32bit timestamp저장) 하여 Fixed Point 방식 채택 
+
+
+![Solidity](https://user-images.githubusercontent.com/66409384/177500680-6872a8be-85b6-4aa6-824c-c36701048c82.png)
