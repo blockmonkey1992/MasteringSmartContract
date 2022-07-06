@@ -8,7 +8,7 @@
 
 
 ## Other Case
-- Uniswap 사례 (112 bit 정수저장 , 112 bit 소수저장, 32bit timestamp저장) 하여 Fixed Point 방식 채택 
+- Uniswap 사례 (112 bit 정수저장 , 112 bit 소수저장, 32bit timestamp저장) 하여 고정 소수점과 유사한 자료형을 만드는 방식 채택 
 
 
 ![Solidity](https://user-images.githubusercontent.com/66409384/177500680-6872a8be-85b6-4aa6-824c-c36701048c82.png)
