@@ -1,6 +1,6 @@
 # Mastering SmartContract
 
-## 주제 및 목적 : Smart Contract Templates
+## 주제 및 목적 : Research about Smart Contract Security & Notable Contracts
 
 ## 환경내용
 - solidity (pragma solidity 0.8.13)

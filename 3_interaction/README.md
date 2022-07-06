@@ -20,6 +20,7 @@
 
 
 ### HOW TO SOLVE ?
+- 0.8.0 이상의 컨트렉트 버전을 이용하고, 만약 그 이하에서 작업을 해야한다면 openzeppelin SafeMath Lib 사용 권장.
 - transfer 함수 사용을 지양하고, call 방식의 전송방식을 채택.
 
 
