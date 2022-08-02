@@ -4,12 +4,12 @@ pragma solidity ^0.8.0;
 import "hardhat/console.sol";
 
 contract Decimals {
-    function div (uint numer, uint domi) // 10 / 4
+    function div (uint numer, uint domi)
     public view
     returns(uint, uint)
     {
         uint decimals = 10 ** 2;
-        uint quotient = numer / domi; // 10 / 4의 정수값
+        uint quotient = numer / domi;
         uint remainder = (numer * decimals / domi) % decimals; // 10 / 4 의 소수값
         console.log(remainder);
         return (quotient, remainder);

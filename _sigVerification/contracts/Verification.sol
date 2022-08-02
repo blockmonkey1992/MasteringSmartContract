@@ -3,25 +3,32 @@
 pragma solidity 0.8.13;
 
 contract Verification {
+    struct myNFT {
+        string name;
+        string description;
+        string uri;
+    }
 
     function verify(
         address _signer, 
-        string memory _msg, 
+        string memory _name,
+        string memory _des,
+        string memory _uri,
         bytes memory _sig
         )
         external pure returns (bool) 
         {
-            bytes32 messageHash = getMessageHash(_msg);
+            bytes32 messageHash = getMessageHash(_name, _des, _uri);
             bytes32 ethSignedMsgHash = getEthSignedMessageHash(messageHash);
 
             return recover(ethSignedMsgHash, _sig) == _signer;
         }
 
 
-    function getMessageHash (string memory _msg) 
+    function getMessageHash (string memory _name, string memory _des, string memory _uri) 
         public pure returns (bytes32) 
         {
-            return keccak256(abi.encodePacked(_msg));
+            return keccak256(abi.encodePacked(_name, _des, _uri));
         }
 
     function getEthSignedMessageHash (bytes32 _msgHash) 
